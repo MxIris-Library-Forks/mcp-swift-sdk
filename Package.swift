@@ -20,6 +20,10 @@ let package = Package(
       targets: [
         "MCPServer",
       ]),
+    .library(
+        name: "MCPInterface",
+        targets: ["MCPInterface"]
+    ),
   ],
   dependencies: [
     .package(url: "https://github.com/gsabran/JSONRPC", from: "0.9.1"),
